@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+<h1>Compose</h1>
+<form action="/compose" method="post"> <!--action is a route here to handle inside server app.js-->
+    <div class="form-group">
+        <label for="">Title</label>
+        <input type="text" name="postTitle" class="form-control"> <!--name attribute can be used to reference form data after a form is submitted-->
+        <label for="">Post</label>
+        <textarea class="form-control" name="postBody" rows="4"></textarea>
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Publish</button>
+</form>
+
+<%- include("partials/footer"); -%>
